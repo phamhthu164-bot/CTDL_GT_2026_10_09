@@ -12,7 +12,7 @@ export mo_phong_giao_don, xuat_ket_qua_csv
 # ============================================================
 # 1. THONG TIN SINH VIEN
 # ============================================================
-function profile(mssv::String = "B23DCCN001")
+function profile(mssv::String = "N24DCDT091")
     id = uppercase(strip(mssv))
     all(isascii, id) || error("MSSV phải chứa ký tự ASCII.")
     length(id) >= 6 || error("MSSV quá ngắn.")
